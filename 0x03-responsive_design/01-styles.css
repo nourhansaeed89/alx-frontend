@@ -1,0 +1,14 @@
+/* Other CSS rules */
+
+.hero-homepage {
+    background-position: 65% 8rem;
+    background-size: 90rem auto;
+    /* Other properties */
+}
+
+.section-hero .section-inner {
+    min-height: 35vh;
+    /* Other properties */
+}
+
+/* Other CSS rules */
