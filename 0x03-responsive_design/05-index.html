@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Hamburger Menu</title>
+    <link rel="stylesheet" href="05-styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Techium</h1>
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="navicon"></span>
+        </label>
+        <nav class="navbar-menu">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#">Home</a></li>
+                <li class="navbar-item"><a href="#">Services</a></li>
+                <li class="navbar-item"><a href="#">About</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>We help you building your brand!</h2>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        <img
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+                images/pic-about-01_380w.jpg 380w,
+                images/pic-about-01_853w.jpg 853w,
+                images/pic-about-01_1200w.jpg 1200w"
+            src="images/pic-about-01_1200w.jpg"
+            alt="Laptop" class="hero-image">
+    </section>
+    <div class="container">
+        <section class="services">
+            <h2>Services</h2>
+            <h3>We work with you</h3>
+            <div class="service-item">
+                <h4>Design & Concept</h4>
+                <img
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                        images/pic-article-01_380w.jpg 380w,
+                        images/pic-article-01_853w.jpg 853w,
+                        images/pic-article-01_1200w.jpg 1200w"
+                    src="images/pic-article-01_1200w.jpg"
+                    alt="Design & Concept">
+            </div>
+            <div class="service-item">
+                <h4>Development & Marketing</h4>
+                <img
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                        images/pic-article-02_380w.jpg 380w,
+                        images/pic-article-02_853w.jpg 853w,
+                        images/pic-article-02_1200w.jpg 1200w"
+                    src="images/pic-article-02_1200w.jpg"
+                    alt="Development & Marketing">
+            </div>
+            <div class="service-item">
+                <h4>Support & Maintenance</h4>
+                <img
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                        images/pic-article-03_380w.jpg 380w,
+                        images/pic-article-03_853w.jpg 853w,
+                        images/pic-article-03_1200w.jpg 1200w"
+                    src="images/pic-article-03_1200w.jpg"
+                    alt="Support & Maintenance">
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

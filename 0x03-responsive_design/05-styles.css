@@ -1,0 +1,146 @@
+/* 05-styles.css */
+:root {
+    --color-white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.header {
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 2.5rem;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon .navicon {
+    background: var(--color-white);
+    display: block;
+    width: 2rem;
+    height: .2rem;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--color-white);
+    transition: all .2s ease-out;
+}
+
+.menu-icon .navicon:before {
+    top: .7rem;
+}
+
+.menu-icon .navicon:after {
+    top: -.7rem;
+}
+
+.navbar-menu {
+    display: flex;
+    flex: 1;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-right: var(--nav-item-margin, 20px);
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border: 2px solid #ff0000;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: white;
+}
+
+.services {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.service-item {
+    background-color: #f1f1f1;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align:
